@@ -7,7 +7,7 @@ import boto3
 from botocore.config import Config
 from botocore.exceptions import ClientError, BotoCoreError
 
-REGION = os.getenv("AWS_REGION") or os.getenv("AWS_DEFAULT_REGION") or "us-west-2"
+REGION = os.getenv("AWS_REGION") or os.getenv("AWS_DEFAULT_REGION") or "us-east-2"
 HD_TABLE = os.getenv("HD_TABLE", "hd_nums")
 ATTACH_TABLE = os.getenv("ATTACH_TABLE", "caltrees_attachments")
 ATTACH_PLAN_GSI = os.getenv("ATTACH_PLAN_GSI")  # e.g. "plan-index" if exists
