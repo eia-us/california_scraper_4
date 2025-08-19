@@ -197,7 +197,7 @@ def main():
         "plans": out_rows,
     }
 
-    print(ATTACH_TABLE)
+    print(attachments)
 
     clean_payload = to_jsonable(payload)
     body = json.dumps(clean_payload, ensure_ascii=False).encode("utf-8")
